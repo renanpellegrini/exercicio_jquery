@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+form input,
+form button {
+    padding: 12px;
+    margin-top: 12px;
+}
+
+#tarefas {
+    text-align: center;
+    margin: 12px 0;
+}
+
+#tarefas ul li {
+    text-decoration: line-through;
+}
