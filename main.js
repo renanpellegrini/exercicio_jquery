@@ -3,10 +3,6 @@ $(document).ready(function() {
 	const $inputTarefa = $('#nova-tarefa');
 	const $listaTarefas = $('#tarefas ul');
 
-	console.log($formTarefas);
-	console.log($inputTarefa);
-	console.log($listaTarefas);
-
 	$formTarefas.submit(function(e) {
 		e.preventDefault();
 		const tarefa = $inputTarefa.val().trim();
@@ -15,5 +11,8 @@ $(document).ready(function() {
 			$inputTarefa.val('');
 		}
 	});
-
+    
+	$listaTarefas.on('click', 'li', function() {
+		$(this).toggleClass('tachado');
+	});
 });
